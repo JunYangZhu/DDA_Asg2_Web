@@ -6,9 +6,31 @@
     <title>Web</title>
     <script type="module" src="config.js"></script>
     <script type="module" src="main.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    
+    <div>
+        <form class="form" id = "frmCreateUser">
+            <h3 class="form-label">Sign Up</h3>
+            <input type="text" id="email" placeholder="Email...">
+            <input type="password" id="password" placeholder="Password...">
+            <input class="button" type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <div>
+        <form id = "frmLoginUser">
+            <h3 class="form-label">Login</h3>
+            <input type="text" id="loginEmail" placeholder="Email...">
+            <input type="password" id="loginPassword" placeholder="Password...">
+            <input class="button" type="submit" value="Login">
+        </form>
+        <form id = "frmLogoutUser">
+            <h3 class="form-label">Login</h3>
+            <p id="displayEmail"></p>
+            <input class="button" type="submit" value="Logout">
+        </form>
+    </div>
 </body>
 </html>
